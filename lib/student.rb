@@ -6,8 +6,12 @@ class Student < User
     @knowledge = []
   end
 
-def learn (knowledge)
-  @knowledge<< knowledge
-end
-  
+  def learn (knowledge)
+    @knowledge<< knowledge
+  end
+
+  def self.knowledge
+    @knowledge
+  end
+
 end
